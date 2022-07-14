@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         val numerator = 60
         var denominator = 4
         repeat(5) {
+            Thread.sleep(1)
             Log.d(TAG, "$denominator")
             Log.v(TAG, "${numerator / denominator}")
             denominator--
