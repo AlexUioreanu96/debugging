@@ -10,9 +10,12 @@ private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "this is where the app crashed before")
         val helloTextView: TextView = findViewById(R.id.hello_world)
+        Log.d(TAG, "this should be logged if the bug is fixed")
         helloTextView.text = "Hello, debugging!"
         setContentView(R.layout.activity_main)
+
         logging()
         division()
         first()
